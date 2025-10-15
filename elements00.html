@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*
+    Criamos 1 elemento SECTION
+    com innerText "Espada"
+    e adicionamos ele como filho de BODY
+    para ser renderizado na página
+    */
+    const secEspadas = document.createElement("section");
+    secEspadas.innerText = "Espada"
+    /* até aqui o novo elemento está apenas na memória
+        e não é renderizado na página
+    */
+
+    // adicionamos o elemento à árvore do documento
+    document.body.appendChild(secEspadas)
+
+    /*
+    Ao adicionar um elemento a BODY (que faz parte da árvore do documento)
+    o elemento passa a fazer parte da "árvore do documento"
+    e por isso ele é renderizado pelo browser (ele aparece na página)
+    */
+
+</script>
+</html>
