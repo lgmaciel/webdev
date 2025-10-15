@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <article>
+        <h2></h2>
+        <p></p>
+    </article>
+    
+</body>
+<script>
+    const titulos = [
+        "Primeiro Post",
+        "Segundo Post",
+        "Terceiro Post",
+        "Novidade",
+        "Atualização de domingo",
+        "Hoje não fizemos nada",
+        "Estamos de volta!"
+    ]
+
+    for(let i=0; i<titulos.length; i++) {
+        const artigo = document.createElement("article");
+        artigo.innerHTML = `
+        <h2>${titulos[i]}</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, dolorum eos repellat culpa repudiandae tempora commodi rem suscipit, quas vel temporibus mollitia, soluta laborum magnam quod provident animi hic iusto?
+        </p>
+        `
+        document.body.appendChild(artigo);
+    }
+
+
+</script>
+</html>

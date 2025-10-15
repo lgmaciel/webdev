@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    font-family:  cursive;
+    background-color: black;
+    color: rgba(227, 227, 227, 0.851);
+}
+nav{
+    display: flex;
+    
+}
+
+h1{
+    text-align: center;
+    background-color: rgba(89, 89, 89, 0.596);
+    margin: 10px;
+    border-radius: 2%;
+}
+
+h2{
+    text-align: center;
+}
+a{
+    color: rgba(227, 227, 227, 0.851);
+}
+nav > ul  {
+
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+section{
+    background-color: rgba(89, 89, 89, 0.596);
+    border-radius: 2% 2% 2% 2%;
+    margin: 10px;
+    padding: 1px;
+}
+footer{
+    text-align: center;
+}
+img{
+    width: 150px;
+}
+.espadas{
+    display: flex;
+}
+
+
+
+    </style>
+</head>
+<body>   
+</body>
+<script>
+    dadosEspadas = [
+        {
+            titulo:"Iron Sword",
+            texto: "A Espada de Esmeralda é uma opção intermediária no início da aventura. Apesar de não ter o poder absurdo das espadas lendárias, é fácil de conseguir e oferece um bom dano para enfrentar mobs comuns. Ideal para quem quer começar forte antes de partir para desafios maiores.",
+            img: "espada0.png",
+            alt: "imagem da espada emerald Sword"
+        },
+        {
+            titulo:"Espada de Esmeralda",
+            texto: "A Espada de Esmeralda é uma opção intermediária no início da aventura. Apesar de não ter o poder absurdo das espadas lendárias, é fácil de conseguir e oferece um bom dano para enfrentar mobs comuns. Ideal para quem quer começar forte antes de partir para desafios maiores.",
+            img: "espada0.png",
+            alt: "imagem da espada emerald Sword"
+        },
+        {
+            titulo:"Emerald Sword",
+            texto: "A Espada de Esmeralda é uma opção intermediária no início da aventura. Apesar de não ter o poder absurdo das espadas lendárias, é fácil de conseguir e oferece um bom dano para enfrentar mobs comuns. Ideal para quem quer começar forte antes de partir para desafios maiores.",
+            img: "espada0.png",
+            alt: "imagem da espada emerald Sword"
+        }
+    ]
+
+    for(let i=0; i<dadosEspadas.length; i++) {
+        const sectionEspada = document.createElement("section");
+        const umaEspada = dadosEspadas[i];
+
+        sectionEspada.innerHTML = `        
+        <header><h2>${umaEspada.titulo}</h2></header>
+        <main class="espadas"><p>${umaEspada.texto}</p>
+        <img src="${umaEspada.img}" alt="${umaEspada.alt}"></main>
+        `
+        document.body.appendChild(sectionEspada);
+    }
+        
+
+</script>
+</html>

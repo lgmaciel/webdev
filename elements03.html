@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol id="lista"></ol>
+</body>
+<script>
+const olLista = document.querySelector("#lista")
+
+for(let i=0; i<4; i++) {
+    const liUmItem = document.createElement("li")
+    liUmItem.innerHTML=`<img src='espada${i}.png' width=80>`
+    olLista.appendChild(liUmItem)
+}
+
+</script>
+</html>
