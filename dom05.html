@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            display: flex;
+            height: 20px;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+</body>
+<script>
+    const cores = [
+        "white",
+        "black",
+        "red",
+        "green",
+        "blue",
+        "cyan",
+        "magenta",
+        "yellow"
+    ];
+    for(let i=5;i<255;i+=10) {
+        const divCor = document.createElement('div');
+        
+        divCor.style=`background-color: rgb(${i},0,${i});`
+        document.body.appendChild(divCor);
+    }
+
+    </script>
+</html>
