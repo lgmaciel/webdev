@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Título (criado com HTML)</h1>
+</body>
+<script>
+    // criamos um novo elemento
+    const h1Titulo = document.createElement("h1");
+    h1Titulo.innerText = "Título (criado com JS)";
+    // Até aqui, o elemento está apenas na memória
+
+    //Agora vamos conectá-lo à árvore DOM do documento
+    //e assim ele será renderizado pelo browser
+
+    // Pegamos uma referência a um elemento que
+    // já esteja na árvore DOM
+    // Neste caso, o elemento BODY
+    const elemBody = document.querySelector("body")
+
+    // Conectamos o novo elemento ao BODY
+    elemBody.appendChild(h1Titulo)
+
+
+
+</script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Elementos criados dinamicamente</h3>
+    <ol id="lista-numeros">
+        
+    </ol>
+            
+</body>
+
+<script>
+    /*
+    Este Javascript vai preencher
+    a lista-numeros
+    */
+
+    // Pegamos uma referência
+    // a um elemento que já
+    // existe na página
+
+    const lista = document.querySelector("#lista-numeros")
+
+    for(let i=0; i<10; i++) {
+        const liNumero = document.createElement("li")
+        liNumero.innerText = "valor " + i * 100
+        lista.appendChild(liNumero)
+    }
+
+
+</script>
+</html>

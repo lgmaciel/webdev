@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article {
+            border-style: solid;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<h2>Um HTML mais rechonchudo</h2>
+</body>
+<script>
+/*
+Este JS cria uma série de elementos ARTICLE
+com um pouco mais de conteúdo que os exemplos
+anteriores. Para facilitar a descrição desse
+conteúdo será em HTML. Para isso uilizaremos
+a propriedade innerHTML do objeto Element
+que criaremos dinâmicamente.
+*/
+
+for(let i=0; i<10; i++) {
+    const artigo = document.createElement("article")
+    artigo.innerHTML = `
+    <h3>Título do artigo ${i+1}</h3>
+    <img src='https://robohash.org/imgArtigo${i+1}' width='150px'>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi nihil dolor sapiente repudiandae culpa, expedita delectus optio eos maxime recusandae praesentium accusamus iure ducimus ullam adipisci tenetur. Libero, laborum esse!
+    </p>
+    `
+    document.body.appendChild(artigo)
+}
+</script>
+</html>
