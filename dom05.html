@@ -28,7 +28,7 @@
     for(let i=5;i<255;i+=10) {
         const divCor = document.createElement('div');
         
-        divCor.style=`background-color: rgb(${i},0,${i});`
+        divCor.style=`background-color: ${cores[Math.round(Math.random()*8)]};`
         document.body.appendChild(divCor);
     }
 
